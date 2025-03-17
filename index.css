@@ -74,3 +74,39 @@ button {
 	  font-size: 30px !important;
 
 }
+
+@media (min-width: 768px) and (max-width: 991px) { /* Target tablets */
+    .card {
+        max-width: 422px;
+        min-width: 422px;
+    }
+}
+
+.sublime {
+	max-width: 50px !important;
+}
+
+.postman {
+	max-width: 50px !important;
+}
+
+.github, .bootstrap {
+	max-width: 70px !important;
+}
+
+.gitlab {
+	max-width: 80px !important;
+}
+
+.node, .react, .ex, .mongo, .js, .html {
+	max-width: 60px !important;
+}
+
+.css {
+	max-width: 55px !important;
+}
+
+.fb, .in, .giticon, .gitlabicon {
+	max-width: 24px !important;
+}
+
