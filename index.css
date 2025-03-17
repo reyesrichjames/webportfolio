@@ -1,0 +1,70 @@
+.navbar {
+	background-color: #4d8076;
+	color: #c4fcef;
+	
+	
+
+.nav-link {
+	color: #c4fcef;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 500;
+	  font-style: light;
+}
+}
+
+#profile {
+	background-color: #c4fcef;
+	color: #4d8076;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 200;
+	  font-style: normal;
+
+}
+
+#projects {
+	background-color: #c4fcef;
+	color: #4d8076;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 300;
+	  font-style: light;
+}
+
+#tools {
+	background-color: #c4fcef;
+	color: #4d8076;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 100;
+	  font-style: light;
+}
+
+#contact {
+	background-color: #c4fcef;
+	color: #4d8076;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 100;
+	  font-style: light;
+}
+
+
+footer {
+	background-color: #4d8076;
+	color: #c4fcef;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 100;
+	  font-style: light;
+
+}
+
+body { 
+	overflow-x: hidden !important; 
+}
+
+button {
+	color: #00c9a7 !important;
+	font-family: "Asap Condensed", sans-serif;
+	  font-weight: 600 !important;
+	  font-style: normal !important;
+	  background-color: #845ec2 !important;
+	  font-size: 30px !important;
+
+}
