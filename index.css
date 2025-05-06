@@ -1,3 +1,51 @@
+/* Add dark mode support */
+:root {
+  --primary-color: #4d8076;
+  --secondary-color: #c4fcef;
+  --bg-color: #c4fcef;
+  --text-color: #4d8076;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #333333;
+  --secondary-color: #000000;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --card-bg: #1a1a1a;
+  --card-text: #ffffff;
+  --card-shadow: rgba(255,255,255,0.1);
+  --navbar-bg: #111111;
+  --navbar-text: #ffffff;
+  --button-bg: #333333;
+  --button-hover: #555555;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 1.2rem !important;
+}
+
+.card {
+  background-color: var(--card-bg);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 .navbar {
 	background-color: #4d8076;
 	color: #c4fcef;
@@ -197,5 +245,41 @@ button:hover {
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+}
+
+/* Ensure text color changes in dark mode for all sections */
+[data-theme="dark"] #profile,
+[data-theme="dark"] #projects,
+[data-theme="dark"] #tools,
+[data-theme="dark"] #contact {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* Improve card styling in dark mode */
+[data-theme="dark"] .card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border: 1px solid #333;
+}
+
+[data-theme="dark"] .card:hover {
+  box-shadow: 0 10px 20px var(--card-shadow);
+}
+
+/* Navbar styling in dark mode */
+[data-theme="dark"] .navbar {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+}
+
+/* Button styling in dark mode */
+[data-theme="dark"] button {
+  background-color: var(--button-bg) !important;
+  color: var(--navbar-text) !important;
+}
+
+[data-theme="dark"] button:hover {
+  background-color: var(--button-hover) !important;
 }
 
