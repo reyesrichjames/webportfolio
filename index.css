@@ -15,7 +15,8 @@
 }
 
 .navbar-toggler {
-	border: 1px solid rgba(196, 252, 239, 0.1);
+	background-color: #4d8076 !important;
+	border: 1px solid rgba(196, 252, 239, 0.3);
 	padding: 0.25rem 0.5rem;
 }
 
