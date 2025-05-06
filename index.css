@@ -416,3 +416,125 @@ footer {
   transition: all 0.3s ease;
 }
 
+/* Improve tools section alignment and responsiveness */
+#tools .tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#tools .tools-category {
+  margin-bottom: 3rem;
+  padding: 0 15px;
+}
+
+#tools .tools-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+#tools .tool-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tools .tool-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+#tools .tool-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  #tools .tools-icons {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #tools .tool-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #tools .tools-icons {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #tools .tools-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #tools .tool-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Tool icon styling */
+.tool-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.tool-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for tool icons */
+@media (max-width: 768px) {
+  .tool-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tool-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Button alignment responsive behavior */
+@media (min-width: 992px) {
+  #contact form .text-lg-end {
+    padding-right: 0;
+  }
+  
+  #contact button {
+    min-width: 120px;
+  }
+}
+
+/* Remove any custom padding overrides */
+button.btn-lg {
+  min-width: 120px;
+}
+
+/* Button container alignment */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .button-container {
+    justify-content: flex-end;
+  }
+}
+
