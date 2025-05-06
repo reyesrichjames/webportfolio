@@ -93,13 +93,20 @@ footer {
 }
 
 button {
-	color: #00c9a7 !important;
-	font-family: "Asap Condensed", sans-serif;
-	  font-weight: 600 !important;
-	  font-style: normal !important;
-	  background-color: #845ec2 !important;
-	  font-size: 30px !important;
+  color: white !important;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  background-color: #4d8076 !important;
+  font-size: 24px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 8px 20px !important;
+  transition: background-color 0.3s ease !important;
+}
 
+button:hover {
+  background-color: #3a615a !important;
 }
 
 @media (min-width: 768px) and (max-width: 991px) { /* Target tablets */
