@@ -15,7 +15,7 @@
   --card-bg: #1a1a1a;
   --card-text: #ffffff;
   --card-shadow: rgba(255,255,255,0.1);
-  --navbar-bg: #111111;
+  --navbar-bg: #1a1a1a; /* Lighter black matching cards */
   --navbar-text: #ffffff;
   --button-bg: #333333;
   --button-hover: #555555;
@@ -162,12 +162,12 @@ body {
 
 
 footer {
-	background-color: #4d8076;
-	color: #c4fcef;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 	font-family: "Asap Condensed", sans-serif;
 	  font-weight: 100;
 	  font-style: light;
-
+	  transition: all 0.3s ease;
 }
 
 @media (max-width: 426px) {
@@ -281,5 +281,21 @@ button:hover {
 
 [data-theme="dark"] button:hover {
   background-color: var(--button-hover) !important;
+}
+
+/* Fix footer styling in dark mode */
+[data-theme="dark"] footer {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+}
+
+/* Ensure footer has proper transition */
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 100;
+  font-style: light;
+  transition: all 0.3s ease;
 }
 
