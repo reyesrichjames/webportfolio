@@ -27,13 +27,14 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 						<div class="navbar-nav justify-content-center mx-auto">
-							<a class="nav-link active text-white" aria-current="page" href="#landing">Home</a>
-							<a class="nav-link text-white" href="#projects">Projects</a>
-							<a class="nav-link text-white" href="#tools">Tools</a>			
-							<a class="nav-link text-white" href="#contact">Contacts</a>
-							<button id="theme-toggle" class="btn btn-sm ms-2 theme-toggle" aria-label="Toggle theme">
+							<a class="nav-link" href="#landing">Home</a>
+							<a class="nav-link" href="#projects">Projects</a>
+							<a class="nav-link" href="#tools">Tools</a>			
+							<a class="nav-link" href="#contact">Contacts</a>
+							<!-- Theme toggle button -->
+							<button id="theme-toggle" class="btn theme-toggle ms-2" aria-label="Toggle theme">
 								<i class="bi bi-moon-fill"></i>
-							</button>			
+							</button>
 						</div>
 					</div>
 				</div>
@@ -60,10 +61,12 @@
 		<!-- my projects -->
 		<div id="projects" class="container-fluid pt-5">
 			<h1 class="text-center py-3"><strong>My Projects</strong></h1>
-			<div class="row p-5">
-				<!-- card 1 -->
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-					<div class="card p-3 mb-md-5 mb-sm-5 mb-5" onclick="window.open('https://documenter.getpostman.com/view/43520872/2sB2ca7f8g', '_blank');" style="cursor: pointer;">
+			
+			<!-- Bootstrap card grid with proper spacing -->
+			<div class="row justify-content-center">
+				<!-- Card 1 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100" onclick="window.open('https://documenter.getpostman.com/view/43520872/2sB2ca7f8g', '_blank');" style="cursor: pointer;">
 						<img src="images/e-commerce.jpg" class="card-img-top" alt="Service 1" height="200">
 						<div class="card-body">
 							<h5 class="card-title">E-commerce API</h5>
@@ -72,103 +75,98 @@
 						</div>
 					</div>
 				</div>
-<!-- card 2 -->
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card2.jpg" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Course Booking API</h5>
-				            <h5 class="card-title">Documentation</h5>
-				            <p class="card-text">RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
-				        </div>
-				    </div>
-				</div>
-<!-- card 3 -->
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card3.png" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Course booking App</h5>
-				            <p class="card-text">A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
-				        </div>
-				    </div>
-				</div>
-			
-
-			</div>
-<!-- card 4 -->
-			<div class="row p-5">
 				
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				<div class="card p-3 mb-md-5 mb-sm-5 mb-5" onclick="window.open('https://thezuittshop.vercel.app/', '_blank');" style="cursor: pointer;">
-					<img src="images/card4.png" class="card-img-top" alt="Service 1" height="200">
-					<div class="card-body">
-						<h5 class="card-title">E-commerce App</h5>
-						<p class="card-text">MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.</p>
+				<!-- Card 2 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card2.jpg" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Course Booking API</h5>
+							<h5 class="card-title">Documentation</h5>
+							<p class="card-text">RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+						</div>
 					</div>
 				</div>
-				</div>
-<!-- card 5 -->
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card5.jpg" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Airline Booking System</h5>
-				            <h5 class="card-title">Mockup</h5>
-				            <p class="card-text">Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
-				        </div>
-				    </div>
-				</div>
-<!-- card 6 -->
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card6.gif" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Airline Booking System</h5>
-				            <h5 class="card-title">Prototype</h5>
-				            <p class="card-text">Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
-				        </div>
-				    </div>
-				</div>
-			
-
-			</div>
-<!-- card 7 -->
-			<div class="row p-5">
 				
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card7.jpg" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Short Courses Capstone</h5>
-				            <p class="card-text">This project aims to develop a user-friendly task management web app to help individuals track their daily activities efficiently. It applies concepts learned in the Web Development course, including HTML, CSS, JavaScript, and backend integration.</p>
-				        </div>
-				    </div>
+				<!-- Card 3 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card3.png" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Course booking App</h5>
+							<p class="card-text">A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+						</div>
+					</div>
 				</div>
-
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card8.jpg" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Short Courses Capstone</h5>
-				            <p class="card-text">This project aims to develop a user-friendly task management web app to help individuals track their daily activities efficiently. It applies concepts learned in the Web Development course, including HTML, CSS, JavaScript, and backend integration.</p>
-				        </div>
-				    </div>
+				
+				<!-- Card 4 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100" onclick="window.open('https://thezuittshop.vercel.app/', '_blank');" style="cursor: pointer;">
+						<img src="images/card4.png" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">E-commerce App</h5>
+							<p class="card-text">MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.</p>
+						</div>
+					</div>
 				</div>
-
-				<div class="col-lg-4 d-flex col-md-12 col-sm-12 d-md-flex justify-content-center d-sm-flex justify-content-center">
-				    <div class="card p-3 mb-md-5 mb-sm-5 mb-5">
-				        <img src="images/card9.jpg" class="card-img-top" alt="Service 1" height="200">
-				        <div class="card-body">
-				            <h5 class="card-title">Short Courses Capstone</h5>
-				            <p class="card-text">This project aims to develop a user-friendly task management web app to help individuals track their daily activities efficiently. It applies concepts learned in the Web Development course, including HTML, CSS, JavaScript, and backend integration.</p>
-				        </div>
-				    </div>
+				
+				<!-- Card 5 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card5.jpg" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Airline Booking System</h5>
+							<h5 class="card-title">Mockup</h5>
+							<p class="card-text">Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
+						</div>
+					</div>
 				</div>
-			
-
+				
+				<!-- Card 6 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card6.gif" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Airline Booking System</h5>
+							<h5 class="card-title">Prototype</h5>
+							<p class="card-text">Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Card 7 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card7.jpg" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Short Courses Capstone</h5>
+							<p class="card-text">This project aims to develop a user-friendly task management web app to help individuals track their daily activities efficiently. It applies concepts learned in the Web Development course, including HTML, CSS, JavaScript, and backend integration.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Card 8 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card8.jpg" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Short Courses Capstone</h5>
+							<p class="card-text">This project aims to develop a user-friendly task management web app to help individuals track their daily activities efficiently. It applies concepts learned in the Web Development course, including HTML, CSS, JavaScript, and backend integration.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Card 9 -->
+				<div class="col-12 col-md-8 col-lg-4 mb-4">
+					<div class="card h-100">
+						<img src="images/card9.jpg" class="card-img-top" alt="Service 1" height="200">
+						<div class="card-body">
+							<h5 class="card-title">Short Courses Capstone</h5>
+							<p class="card-text">This project aims to develop a user-friendly task management web app to help individuals track their daily activities efficiently. It applies concepts learned in the Web Development course, including HTML, CSS, JavaScript, and backend integration.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-
 		</div>
 		<!-- tools -->
 		<div id="tools">
